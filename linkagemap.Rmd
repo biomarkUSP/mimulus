@@ -1,0 +1,89 @@
+---
+title: "**New insights onto *Mimulus guttatus* genetic map after 18 years of genomic research**"
+
+author: | 
+  | **Anna Letycia B. Garcia^1^, Germano Martins F. Costa-Neto^2^, Nathália Salgado Silva^3^,Rafael Massahiro Yassue^2^**
+  |
+  | ^1^ Bioinformatics Applied to Bioenergy Laboratory, University of São Paulo (ESALQ/USP).
+  | ^2^ Allogamous Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
+  | ^3^ Genetic Diversity and Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
+
+  
+output: html_document
+---
+<style>
+body {
+text-align: justify;
+font-family: Calibri;
+font-size: 2em
+}
+</style>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/biomarkUSP/Molecular-Markers/master/logo_usp_esalq.png" width="200" align = "center">
+
+__________________________________________________________________________________________
+
+
+# **Main**
+
+Fishman et al. (2001) build a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (N=526) were genotyped for 174 markers. Based on this study, the authors have found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distribuited over 14 linkage group. 
+
+Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded XXX new loci and expanded the maps to a lenght of 2933.95 cM Kosambi.
+
+For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video here[].
+
+__________________________________________________________________________________________
+
+# **Results and Discussion**
+
+A total of 14 linkage groups were formed (Figure 1), which agrees to the haploid number of chromosomes. 
+The genetic map drawn with MapChart is presented in Figure 2.
+
+
+<p align="center">
+![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/seg_plot.png?raw=true)
+**Figure 1. Segregation pattern in Mimulus mapping population**
+
+<p align="center">
+![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/figurafinal2.png?raw=true)
+**Figure 2. Heatmaps describing marker ordering over the 14 linkage groups of *Mimulus guttatus*.**
+
+![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/cromo.png?raw=true)
+</p>
+**Figure 3. MapChart drawing the 14 linkage groups and the loci information updated in this study.**
+
+__________________________________________________________________________________________
+
+# **Material and Methods**
+
+A cross between *Mimulus guttatus* (outcrossing) x *Mimus nasutus* (selfing) originated an F$_{2}$ population discribed in Fishman et al. (2001). 287 individuals were genotyped with 418 markers. The data was disposed in a MAPMAKER file and the linkage map was built using OneMap package. 
+We applied a segregation test to observe if there were distorted markers. The hypotesis tested was segregation pattern of 1:2:1, as expected for a F$_{2}$ population.
+To construct a linkage map, we made two-point tests with all markers, considering LOD score = 6 and the maximum recombination fraction of 0.35 and created a non-ordered sequence with all markers. Then, we used the function group to assign markes to linkage groups. We repeated this procedure three more times, changing the maximum recombination fraction to 0.5 and 0.25 with LOD = 6, respectively, and 0.35 with LOD = 7.   
+Considering *ad hoc* information, the analysis continued with the strategy that resulted in the highest number of linkage groups. Makers were ordered between the 14 linkage groups by the function make_seq and then ordered the markers within each group with function order_seq. All the markers that were mapped in more than one position were added by the function make_seq, using the argument "force", which assigned to the most probable position. After that, the same analysis was performed with non-distorted markers. 
+Observing heatmaps for each linkage group, it was possible to check which markers should be removed, because they do not follow the recombination fraction pattern. These makers were removed using the function drop_markers. We followed the same pipeline discribed above, without those markers. 
+Lastly, a final ordering was applied for each linkage group using ripple_seq function, considering a window size of five markers.
+We draw the genetic map with MapChart.
+
+
+# **References**
+
+
+Broman, K. W., and S. Sen, 2009 **A Guide to QTL Mapping with R/qtl**, Vol. 46. Springer, New York.
+
+Broman, K. W., H. Wu, S. Sen, and G. A. Churchill, 2003 **R/qtl: QTL mapping in experimental crosses**. Bioinformatics 19: 889-890.
+
+Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 **A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions**. Genetics 159: 1701-1716.
+
+Fishman, L. A., and J. H. Willis, 2001 **Evidence for Dobzhansky-Muller Inteincompatibilities contributing to the sterility of hybrids between *Mimulus guttatus* and *M. nasutus* **. Evolution 55: 1932â€“1942
+
+Kosambi, D.D., 1944 **The estimation of map distance from recombination values**. Annuaire of Eugenetics 12:172-175.
+
+Margarido, G.R., Souza, A.P, Garcia, A.A.F., 2007 **OneMap: software for genetic mapping in outcrossing species**. Hereditas 144:78-79.
+
+Voorrips, R.E., 2002 **MapChart: software for the graphical presentation of linkage maps and QTLs**. Journal of Heredity.93: 77-78.
+
+Wu, R., Ma, C.-X., Painter, I. and Zeng, Z.-B. (2002) **Simultaneous maximum likelihood estimation of linkage and linkage phases in outcrossing species**.Theoretical Population Biology 61: 349-363.
+
+
+</p>
