@@ -42,8 +42,8 @@ ________________________________________________________________________________
 **Genetic Material:** A cross between *Mimulus guttatus* (outcrossing) x *Mimus nasutus* (selfing) originated an F$_{2}$ population discribed in Fishman et al. (2001). This population were composed by 287 individuals genotyped with 418 markers. For more details see Fishman et al. (2001).
 
 **Genetic linkage map:** We applied a segregation test to observe if there were distorted markers (Figure 1). The null-hypotesis ($H_0$) tested was segregation pattern of *1:2:1*, as expected for a F$_{2}$ population. To construct a linkage map, we made two-point tests with all markers, considering *LOD score* = 6 and the maximum recombination fraction $\theta = 0.35$ and created a non-ordered sequence with all markers. Then, we used the function group to assign markes to linkage groups. We repeated this procedure three more times, changing the maximum recombination fraction ($\theta_{max}$) to 0.5 and 0.25 with *LOD* = 6, respectively, and 0.35 with *LOD* = 7.  
-Considering *ad hoc* information, the analysis continued with the strategy that resulted in the highest number of linkage groups. Makers were ordered between the 14 linkage groups by the function make_seq and then ordered the markers within each group with function order_seq. All the markers that were mapped in more than one position were added by the function *make_seq*, using the argument '*force*', which assigned to the most probable position. After that, the same analysis was performed with non-distorted markers. 
-Observing heatmaps for each linkage group, it was possible to check which markers should be removed, because they do not follow the recombination fraction pattern. These makers were removed using the function drop_markers. We followed the same pipeline discribed above, without those markers. 
+Considering *ad hoc* information, the analysis continued with the strategy that resulted in the highest number of linkage groups. Makers were ordered between the 14 linkage groups by the function *make_seq* and then ordered the markers within each group with function *order_seq*. All the markers that were mapped in more than one position were added by the function *make_seq*, using the argument '*force*', which assigned to the most probable position. After that, the same analysis was performed with non-distorted markers. 
+Observing heatmaps for each linkage group, it was possible to check which markers should be removed, because they do not follow the recombination fraction pattern. These makers were removed using the function *drop_markers*. We followed the same pipeline discribed above, without those markers. 
 Lastly, a final ordering was applied for each linkage group using *ripple_seq* function, considering a window size of five markers.
 We draw the genetic map with MapChart.
 
@@ -74,11 +74,11 @@ ________________________________________________________________________________
 
 # **References**
 
-Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 **A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions**. Genetics 159: 1701-1716.
+Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 **A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions**. Genetics 159: 1701-1716.
 
-Kosambi, D.D., 1944 **The estimation of map distance from recombination values**. Annuaire of Eugenetics 12:172-175.
+Kosambi, D.D., 1944 **The estimation of map distance from recombination values**. Annuaire of Eugenetics 12:172-175.
 
-Margarido, G.R., Souza, A.P, Garcia, A.A.F., 2007 **OneMap: software for genetic mapping in outcrossing species**. Hereditas 144:78-79.
+Margarido, G.R., Souza, A.P, Garcia, A.A.F., 2007 **OneMap: software for genetic mapping in outcrossing species**. Hereditas 144:78-79.
 
 Voorrips, R.E., 2002 **MapChart: software for the graphical presentation of linkage maps and QTLs**. Journal of Heredity.93: 77-78.
 
