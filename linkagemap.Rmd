@@ -11,6 +11,7 @@ author: |
   
 output: html_document
 ---
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/biomarkUSP/Molecular-Markers/master/logo_usp_esalq.png" width="200" align = "center">
 
@@ -22,8 +23,6 @@ font-size: 2em
 }
 </style>
 
-
-
 __________________________________________________________________________________________
 
 
@@ -33,7 +32,7 @@ Fishman et al. (2001) build a genetic linkage map of an interspecific cross betw
 
 Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a lenght of 2933.95 cM Kosambi.
 
-For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video here[].
+For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video here[]. Our codes used in this study are freely available [here](https://raw.githubusercontent.com/biomarkUSP/mimulus/master/linkage_map_codes.R)
 
 __________________________________________________________________________________________
 
