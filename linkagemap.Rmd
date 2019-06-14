@@ -2,11 +2,11 @@
 title: "**New insights onto *Mimulus guttatus* genetic map after 18 years of genomic research**"
 
 author: | 
-  | **Anna Letycia B. Garcia^1^, Germano Martins F. Costa-Neto^2^, Nath?lia Salgado Silva^3^,Rafael Massahiro Yassue^2^**
+  | **Anna Letycia B. Garcia^1^, Germano Martins F. Costa-Neto^2^, Nathália Salgado Silva^3^,Rafael Massahiro Yassue^2^**
   |
-  | ^1^ Bioinformatics Applied to Bioenergy Laboratory, University of S?o Paulo (ESALQ/USP).
-  | ^2^ Allogamous Plant Breeding Laboratory, University of S?o Paulo (ESALQ/USP).
-  | ^3^ Genetic Diversity and Plant Breeding Laboratory, University of S?o Paulo (ESALQ/USP).
+  | ^1^ Bioinformatics Applied to Bioenergy Laboratory, University of São Paulo (ESALQ/USP).
+  | ^2^ Allogamous Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
+  | ^3^ Genetic Diversity and Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
 
   
 output: html_document
@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 Fishman et al. (2001) built a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (*N*=526) were genotyped for 174 markers. Based on this study, the authors found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distributed over 14 linkage group. 
 
-Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a length of 2933.95 cM Kosambi. In relation to the Fishman et al. (2001) maps, our markers positions were mostly similar with some inversions at some regions and some linkage groups were named differently (e.g. LG7 from Fishman were named as LG6 at ours).
+Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a length of 2933.95 cM Kosambi. In relation to the Fishman et al. (2001) maps, our markers positions were mostly similar, however, we observed some inversions at some regions and linkage groups were named differently (e.g. LG7 from Fishman were named as LG6 at ours).
 
 For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video [here](https://www.youtube.com/watch?v=Uaax9SRUEbE&feature=youtu.be). Our codes used in this study are freely available [here](https://github.com/biomarkUSP/mimulus/blob/master/linkage_map_codes.R).
 
