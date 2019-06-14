@@ -28,11 +28,11 @@ ________________________________________________________________________________
 
 # **Main**
 
-Fishman et al. (2001) built a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (*N*=526) were genotyped for 174 markers. Based on this study, the authors found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distributed over 14 linkage group. 
+Fishman et al. (2001) built a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (*N*=526) were genotyped for 174 markers. Based on this study, the authors found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distributed over 14 linkage group. Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a length of 2933.95 cM Kosambi. In relation to the Fishman et al. (2001) linkage map, our markers positions were mostly similar, however, we observed some inversions at some regions. Thereby, we also observed that some linkage groups were named differently (e.g. LG7 from Fishman were named as LG6 at ours) but having the same marker orders within them.
 
-Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a length of 2933.95 cM Kosambi. In relation to the Fishman et al. (2001) maps, our markers positions were mostly similar, however, we observed some inversions at some regions. Thereby, we also observed that some linkage groups were named differently (e.g. LG7 from Fishman were named as LG6 at ours) but having the same marker orders within them.
-For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video [here](https://www.youtube.com/watch?v=Uaax9SRUEbE&feature=youtu.be). Our codes used in this study are freely available [here](https://github.com/biomarkUSP/mimulus/blob/master/linkage_map_codes.R).
+For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check [our youtube video](https://www.youtube.com/watch?v=Uaax9SRUEbE&feature=youtu.be).
 
+See also [ou R-code](https://github.com/biomarkUSP/mimulus/blob/master/linkage_map_codes.R) used in this study, which is freely available to practice the concepts presented here.
 __________________________________________________________________________________________
 
 # **Material and Methods**
