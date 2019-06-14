@@ -2,11 +2,11 @@
 title: "**New insights onto *Mimulus guttatus* genetic map after 18 years of genomic research**"
 
 author: | 
-  | **Anna Letycia B. Garcia^1^, Germano Martins F. Costa-Neto^2^, Nathália Salgado Silva^3^,Rafael Massahiro Yassue^2^**
+  | **Anna Letycia B. Garcia^1^, Germano Martins F. Costa-Neto^2^, Nath?lia Salgado Silva^3^,Rafael Massahiro Yassue^2^**
   |
-  | ^1^ Bioinformatics Applied to Bioenergy Laboratory, University of São Paulo (ESALQ/USP).
-  | ^2^ Allogamous Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
-  | ^3^ Genetic Diversity and Plant Breeding Laboratory, University of São Paulo (ESALQ/USP).
+  | ^1^ Bioinformatics Applied to Bioenergy Laboratory, University of S?o Paulo (ESALQ/USP).
+  | ^2^ Allogamous Plant Breeding Laboratory, University of S?o Paulo (ESALQ/USP).
+  | ^3^ Genetic Diversity and Plant Breeding Laboratory, University of S?o Paulo (ESALQ/USP).
 
   
 output: html_document
@@ -28,37 +28,37 @@ ________________________________________________________________________________
 
 # **Main**
 
-Fishman et al. (2001) build a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (*N*=526) were genotyped for 174 markers. Based on this study, the authors have found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distribuited over 14 linkage group. 
+Fishman et al. (2001) built a genetic linkage map of an interspecific cross between *M. guttatus* and *M.nasutus*. At that time, the $F_2$ mapping population used (*N*=526) were genotyped for 174 markers. Based on this study, the authors found a genetic map of 2011-2096 cM Kosambi size, containing 174 marker loci distributed over 14 linkage group. 
 
-Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a lenght of 2933.95 cM Kosambi.
+Here we incorporate new genomic information onto the Fishman's map in order to update the new loci information. By using a new data set of the same population with 418 markers, we founded 388 new loci and expanded the maps to a length of 2933.95 cM Kosambi. In relation to the Fishman et al. (2001) maps, our markers positions were mostly similar with some inversions at some regions and some linkage groups were named differently (e.g. LG7 from Fishman were named as LG6 at ours).
 
-For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video here[]. Our codes used in this study are freely available [here](https://raw.githubusercontent.com/biomarkUSP/mimulus/master/linkage_map_codes.R)
+For more details about the procedures founded in this paper, also the strategies to build a genetic linkage map using *OneMap R-package*, please check our youtube video [here](https://www.youtube.com/watch?v=Uaax9SRUEbE&feature=youtu.be). Our codes used in this study are freely available [here](https://github.com/biomarkUSP/mimulus/blob/master/linkage_map_codes.R).
 
 __________________________________________________________________________________________
 
 # **Material and Methods**
 
-**Genetic Material:** A cross between *Mimulus guttatus* (outcrossing) x *Mimus nasutus* (selfing) originated an F$_{2}$ population discribed in Fishman et al. (2001). This population were composed by 287 individuals genotyped with 418 markers. For more details see Fishman et al. (2001).
+**Genetic Material:** A cross between *Mimulus guttatus* (outcrossing) x *Mimus nasutus* (selfing) originated an F$_{2}$ population described in Fishman et al. (2001). This population was composed of 287 individuals genotyped with 418 markers. For more details see Fishman et al. (2001).
 
-**Genetic linkage map:** We applied a segregation test to observe if there were distorted markers (Figure 1). The null-hypotesis ($H_0$) tested was segregation pattern of *1:2:1*, as expected for a F$_{2}$ population. To construct a linkage map, we made two-point tests with all markers, considering *LOD score* = 6 and the maximum recombination fraction $\theta = 0.35$ and created a non-ordered sequence with all markers. Then, we used the function group to assign markes to linkage groups. We repeated this procedure three more times, changing the maximum recombination fraction ($\theta_{max}$) to 0.5 and 0.25 with *LOD* = 6, respectively, and 0.35 with *LOD* = 7.  
+**Genetic linkage map:** We applied a segregation test to observe if there were distorted markers (Figure 1). The null-hypothesis ($H_0$) tested was segregation pattern of *1:2:1*, as expected for an F$_{2}$ population. To construct a linkage map, we made two-point tests with all markers, considering *LOD score* = 6 and the maximum recombination fraction $\theta = 0.35$ and created a non-ordered sequence with all markers. Then, we used the function group to assign markers to linkage groups. We repeated this procedure three more times, changing the maximum recombination fraction ($\theta_{max}$) to 0.5 and 0.25 with *LOD* = 6, respectively, and 0.35 with *LOD* = 7.  
 Considering *ad hoc* information, the analysis continued with the strategy that resulted in the highest number of linkage groups. Makers were ordered between the 14 linkage groups by the function *make_seq* and then ordered the markers within each group with function *order_seq*. All the markers that were mapped in more than one position were added by the function *make_seq*, using the argument '*force*', which assigned to the most probable position. After that, the same analysis was performed with non-distorted markers. 
-Observing heatmaps for each linkage group, it was possible to check which markers should be removed, because they do not follow the recombination fraction pattern. These makers were removed using the function *drop_markers*. We followed the same pipeline discribed above, without those markers. 
+By observing heatmaps for each linkage group, it was possible to check which markers should be removed because it doesn't segregate as the expected recombination fraction pattern. These makers were removed using the function *drop_markers*. We followed the same pipeline described above, without those markers. 
 Lastly, a final ordering was applied for each linkage group using *ripple_seq* function, considering a window size of five markers.
 We draw the genetic map with MapChart.
 
- **Software**:The data was disposed in a MAPMAKER file and the linkage map was built using OneMap package (Margarido et al, 2007). We draw the genetic maps using MapChart software (Vorrips et al 2002).
+ **Software**:The data was imported in a MAPMAKER file and the linkage map was built using OneMap package (Margarido et al, 2007). We draw the genetic maps using MapChart software (Vorrips et al 2002).
  
 __________________________________________________________________________________________
 
 # **Results**
 
-The segregation pattern observed is presented in Figure 1. A total of 14 linkage groups were formed (Figure 2), which agrees to the haploid number of chromosomes. 
+The segregation pattern observed and the distorcion pattern is presented in Figure 1. A total of 14 linkage groups were formed (Figure 2), which agrees to the haploid number of chromosomes. 
 The genetic map drawn with MapChart is presented in Figure 3.
 
 
 <p width="150" height="100" align="center">
-![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/seg_plot.png?raw=true)
-**Figure 1. Segregation pattern in Mimulus mapping population**
+![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/segplot.png?raw=true)
+**Figure 1. Patterns of distorcion and segregation in *Mimulus* mapping population**
 
 <p align="center">
 ![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/figurafinal2.png?raw=true)
@@ -67,6 +67,12 @@ The genetic map drawn with MapChart is presented in Figure 3.
 ![](https://github.com/biomarkUSP/Molecular-Markers/blob/master/cromo.png?raw=true)
 </p>
 **Figure 3. MapChart drawing the 14 linkage groups and the loci information updated in this study.**
+
+
+In a total of 287 individuals from a F$_{2}$ population, 89% was genotyped with 418 markers. Among these markers, 213 were codominant (AA:AB:BB), 92 were not homozygous for the allele A (BB or BA) and 113 could be AA or AB (Figure 1). About those markers, 15% were distorted under the Bonferroni test. When we analyzed marker distribution and redundancy, there were no redundant markers, with one marker per bin on average, but in relation to Mendel's segregation for $F_2$ (1:2:1), 15% of markers showed distorted under Bonferroni's test.
+Four attempts to get the linkage groups were performed. In the first two, using LOD 6, but varying the recombination fraction from 0.35 to 0.5, only ten groups were obtained. In the third and fourth adjust, 12 and 14 groups were made, showing that the best value for LOD and recombination fraction to make more linkage groups were 6 and 0.25, respectively.
+Proceeding with the analysis, the markers were assigned in fourteen groups. Those were analyzed regardless of their segregation behavior.  Thus, the markers were attributed in the fourteen groups, ranging from nineteen markers in the first group to forty-three in the eighth. Those fourteen groups correspond to the haploid chromosome number of Mimulus species. 
+The last step was the heatmaps analyze, which shows the relation between the markers and the recombination fraction. By the color, it is possible to infer about the distance and the behavior of the marker about recombination. Thus, markers with dark colors, as purple, had the highest distance, which means more probability to have recombination between the markers when compared with markers which received light color, like green, or even red. 
 
 __________________________________________________________________________________________
 
